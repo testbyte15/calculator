@@ -1,7 +1,7 @@
-package calculator;
+package calculator.versions.v1;
 
-import calculator.operations.*;
-import calculator.operations.Math;
+import calculator.versions.v1.operations.*;
+import calculator.versions.v1.operations.Math;
 
 public class CalculatorController {
     private CalculatorModel model;

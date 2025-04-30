@@ -1,4 +1,4 @@
-package calculator.operations;
+package calculator.versions.v1.operations;
 
 public class MultipleNumbers implements Math {
     @Override

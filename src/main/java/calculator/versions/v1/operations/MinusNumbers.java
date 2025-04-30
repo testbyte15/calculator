@@ -1,4 +1,4 @@
-package calculator.operations;
+package calculator.versions.v1.operations;
 
 public class MinusNumbers implements Math {
     @Override

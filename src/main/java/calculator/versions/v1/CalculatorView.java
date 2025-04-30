@@ -1,4 +1,6 @@
-package calculator;
+package calculator.versions.v1;
+
+import calculator.window.SingletonFrame;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,10 +18,7 @@ public class CalculatorView {
     private JLabel resultLabel;
 
     public CalculatorView(){
-        frame = new JFrame("Calculator 0.1v");
-        frame.setSize(240, 320);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+        this.frame = SingletonFrame.getInstance().getFrame();
         Container pane = frame.getContentPane();
         pane.setLayout(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
