@@ -1,10 +1,9 @@
 package calculator.window.menu.commands;
 
-import calculator.versions.v1.CalculatorVersionOneFactory;
+import calculator.mvc.versions.v1.ControllerV1;
+import calculator.mvc.versions.v1.ModelV1;
+import calculator.mvc.versions.v1.ViewV1;
 import calculator.window.SingletonFrame;
-import calculator.versions.v1.CalculatorController;
-import calculator.versions.v1.CalculatorView;
-import calculator.versions.v1.operations.CalculatorModel;
 
 import javax.swing.*;
 
@@ -21,6 +20,6 @@ public class ClickItemMenuVersionOne implements Command {
         frame.getContentPane().revalidate();
         frame.getContentPane().repaint();
 
-        new CalculatorVersionOneFactory().createController();
+        new ControllerV1(new ModelV1(), new ViewV1());
     }
 }
