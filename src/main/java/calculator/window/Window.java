@@ -5,6 +5,7 @@ import calculator.mvc.versions.v1.ModelV1;
 import calculator.mvc.versions.v1.ViewV1;
 import calculator.window.menu.BarMenu;
 import calculator.window.menu.commands.ClickItemMenuVersionOne;
+import calculator.window.menu.commands.ClickItemMenuVersionThree;
 import calculator.window.menu.commands.ClickItemMenuVersionTwo;
 import calculator.window.menu.items.VersionMenu;
 
@@ -35,6 +36,7 @@ public class Window {
         barMenu.setMenu(new VersionMenu());
         barMenu.addItemToMenu("v1", new ClickItemMenuVersionOne());
         barMenu.addItemToMenu("v2", new ClickItemMenuVersionTwo());
+        barMenu.addItemToMenu("v3", new ClickItemMenuVersionThree());
     }
 
     public void setDefaultWindowParameters(){
